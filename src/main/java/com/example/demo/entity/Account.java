@@ -23,6 +23,7 @@ public class Account {
     @NotBlank
     String email;
     @Pattern(regexp = "(84|0[3|5|7|8|9])+([0-9]{8})", message = "Invalid phone!")
+    @NotBlank
     String phone;
     @Size(min = 6, message = "Password must be at least 6 characters!")
     String password;

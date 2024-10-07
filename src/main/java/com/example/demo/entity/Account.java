@@ -20,6 +20,7 @@ public class Account {
     @Pattern(regexp = "KH\\d{6}", message = "Invalid code!")
     String code;
     @Email(message = "Invalid Email!")
+    @NotBlank
     String email;
     @Pattern(regexp = "(84|0[3|5|7|8|9])+([0-9]{8})", message = "Invalid phone!")
     String phone;
